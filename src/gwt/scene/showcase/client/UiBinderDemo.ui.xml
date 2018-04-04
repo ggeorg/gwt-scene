@@ -1,0 +1,59 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:x="urn:import:gwt.scene.ui.client">
+	<ui:style>
+	
+	</ui:style>
+
+
+	<ui:import field="gwt.scene.ui.client.ButtonStyle.*" />
+	<ui:import field="gwt.scene.ui.client.ButtonType.BUTTON" />
+
+	<x:Container>
+		<x:VBox height="100%">
+			<x:Button>Button #1</x:Button>
+			<x:Form>
+				<div ui:field="lala" class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<x:TextBox type="EMAIL" x:id="exampleInputEmail1" 
+						
+						placeholder="Enter email"  enabled="false"/>
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email
+						with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<x:TextBox ui:field="password" type="PASSWORD" x:id="exampleInputPassword1" placeholder="Password" />
+				</div>
+				<div class="form-check">
+					<x:CheckBox x:id="exampleCheck1" checked="true"/> 
+					<label class="form-check-label" for="exampleCheck1">Check me out</label>
+				</div>
+
+				<div class="form-check form-check-inline">
+					<x:RadioButton x:id="exampleRadios1" name="exampleRadios" checked="true"/> 
+					<label class="form-check-label" for="exampleRadios1">Check me out</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<x:RadioButton x:id="exampleRadios2" name="exampleRadios"/> 
+					<label class="form-check-label" for="exampleRadios2">Check me out</label>
+					<g:Label />
+				</div>
+				
+				<div class="form-group">
+					<x:ListBox>
+						<g:item>lala</g:item>
+						<g:item value="2">lala 2</g:item>
+					</x:ListBox>
+				</div>
+
+				<div class="form-group">
+					<x:Button flex="1" type="SUBMIT" style="PRIMARY">Submit</x:Button>
+				</div>
+			</x:Form>
+			<x:Button flex="1">Button #2</x:Button>
+		</x:VBox>
+	</x:Container>
+
+</ui:UiBinder> 

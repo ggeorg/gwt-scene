@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:x="urn:import:gwt.scene.ui.client">
+
+	<ui:style>
+	
+	</ui:style>
+
+	<ui:import field="gwt.scene.ui.client.ButtonType.*" />
+	<ui:import field="gwt.scene.ui.client.InputType.*" />
+
+	<x:Form>
+		<div class="form-group">
+			<x:TextBox type="TEXT" required="true" x:id="customCheck1" />
+		</div>
+	</x:Form>
+</ui:UiBinder> 

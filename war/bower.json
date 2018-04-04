@@ -1,0 +1,29 @@
+{
+  "name": "war",
+  "authors": [
+    "ggeorg <georgopoulos.georgios@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "datatables.net-bs4": "^3.2.2",
+    "bootstrap": "^4.0.0",
+    "popper.js": "^1.14.1",
+    "font-awesome": "^5.0.8",
+    "datatables.net-responsive-bs4": "^2.2.0",
+    "datatables.net-select-bs4": "^1.2.3",
+    "datatables.net-scroller-bs4": "^1.4.3",
+    "jquery-ui": "^1.12.1",
+    "jquery-resizable": "^0.20.0",
+    "SlickGrid-6pac": "^2.3.17"
+  }
+}

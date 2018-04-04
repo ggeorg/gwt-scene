@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.0//EN"
+  "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
+<module>
+	<inherits name='gwt.scene.core.Core' />
+	
+	<stylesheet src="jquery-ui/1.12.1/themes/smoothness/jquery-ui.css"/>
+	<stylesheet src="flex-box.css"/>
+	<stylesheet src="ui.css"/>
+</module>

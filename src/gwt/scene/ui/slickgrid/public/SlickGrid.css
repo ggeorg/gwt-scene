@@ -1,0 +1,7 @@
+.slick-header-column.ui-state-default {
+	height: auto;
+	line-height: auto;
+}
+.slick-header-column > .slick-column-name {
+	float: left;
+}

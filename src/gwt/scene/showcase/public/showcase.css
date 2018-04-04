@@ -1,0 +1,33 @@
+/** Add css rules here for your application. */
+
+div.dataTables_wrapper.form-inline {
+    display: block;
+}
+
+div.dataTables_wrapper div.dataTables_length, 
+div.dataTables_wrapper div.dataTables_info {
+    float: left;
+    margin-right: 15px;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+    display: inline;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    display: inline-flex;
+}
+
+body, .scene {
+	border: 1em solid #888;
+	margin: 1em;
+	padding: 1em;
+}
+
+button {
+	-border: 1em solid #888 !important;
+	-margin: 1em !important;
+}

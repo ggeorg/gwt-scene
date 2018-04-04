@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.0//EN"
+  "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
+<module>
+	<inherits name='gwt.scene.core.Core' />
+	<stylesheet src="datatables.net-bs4/3.2.2/css/dataTables.bootstrap4.min.css"/>
+	<stylesheet src="datatables.net-responsive-bs4/2.2.0/css/responsive.bootstrap4.min.css"/>
+	<stylesheet src="datatables.net-scroller-bs4/1.4.3/css/scroller.bootstrap4.min.css"/>
+</module>
