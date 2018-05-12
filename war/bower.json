@@ -24,6 +24,10 @@
     "datatables.net-scroller-bs4": "^1.4.3",
     "jquery-ui": "^1.12.1",
     "jquery-resizable": "^0.20.0",
-    "SlickGrid-6pac": "^2.3.17"
+    "SlickGrid-6pac": "^2.3.17",
+    "bootstrap-datepicker": "^1.8.0",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "tempusdominus-bootstrap-4": "^5.0.0-alpha8",
+    "nvd3": "^1.8.6"
   }
 }
