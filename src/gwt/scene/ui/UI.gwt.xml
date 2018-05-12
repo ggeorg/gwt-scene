@@ -3,8 +3,13 @@
   "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
 <module>
 	<inherits name='gwt.scene.core.Core' />
-	
+	<stylesheet src="font-awesome/5.0.8/css/fontawesome-all.min.css"/>
 	<stylesheet src="jquery-ui/1.12.1/themes/smoothness/jquery-ui.css"/>
+	<stylesheet src="bootstrap/4.0.0/css/bootstrap.min.css"/>
+	<!-- <stylesheet src="bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css"/> -->
+	<stylesheet src="bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.min.css"/> 
+	<!-- <stylesheet src="tempusdominus-bootstrap-4/5.0.0-alpha18/css/tempusdominus-bootstrap-4.min.css"/> -->
+	<stylesheet src="bootstrap4-datetimepicker/4.17.50/css/bootstrap-datetimepicker.min.css"/> 
 	<stylesheet src="flex-box.css"/>
 	<stylesheet src="ui.css"/>
 </module>
