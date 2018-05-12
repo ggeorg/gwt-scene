@@ -21,7 +21,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
     display: inline-flex;
 }
 
-body, .scene {
+.scene {
 	border: 1em solid #888;
 	margin: 1em;
 	padding: 1em;

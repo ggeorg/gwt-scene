@@ -11,8 +11,17 @@
 	<ui:import field="gwt.scene.ui.client.InputType.*" />
 
 	<x:Form>
-		<div class="form-group">
-			<x:TextBox type="TEXT" required="true" x:id="customCheck1" />
+		<div class="form-group row">
+			<label class="col-md-3 col-form-label" for="datePicker1">Default Datepicker</label>
+			<div class="col-md-9">
+				<x:Datepicker x:id="datePicker1" />
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-md-3 col-form-label" for="datetimePicker1">Default Datepicker</label>
+			<div class="col-md-9">
+				<x:DatetimePicker ui:field="datetimePicker"  /><!-- x:id="datetimePicker1" -->
+			</div>
 		</div>
 	</x:Form>
 </ui:UiBinder> 

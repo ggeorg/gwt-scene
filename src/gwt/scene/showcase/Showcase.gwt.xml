@@ -20,6 +20,7 @@
   <!-- Other module inherits                                      -->
   <inherits name="gwt.scene.ui.UI"/>
   <inherits name="gwt.scene.ui.slickgrid.SlickGrid"/>
+  <inherits name="gwt.scene.ui.nvd3.NVD3"/>
 
   <!-- Specify the app entry point class.                         -->
   <entry-point class='gwt.scene.showcase.client.Showcase'/>

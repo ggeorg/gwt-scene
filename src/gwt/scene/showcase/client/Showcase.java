@@ -5,9 +5,8 @@ import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.Window;
 
 import gwt.scene.core.client.ModuleLoader;
-import gwt.scene.ui.client.Button;
-import gwt.scene.ui.client.Container;
-import gwt.scene.ui.client.FlowPane;
+import gwt.scene.ui.client.Canvas;
+import gwt.scene.ui.client.Direction;
 import gwt.scene.ui.client.Scene;
 
 public class Showcase implements EntryPoint, Callback<Void, Exception> {
@@ -15,90 +14,16 @@ public class Showcase implements EntryPoint, Callback<Void, Exception> {
 	public void onModuleLoad() {
 		ModuleLoader.require(this, "UI");
 	}
-	
+
 	@Override
 	public void onSuccess(Void result) {
-		uiBinderTest();
-		//flowPaneTest();
-	}
-
-	private void uiBinderTest() {
 		Scene scene = new Scene();
-		scene.addStyleName("scene");
+		scene.setDirection(Direction.HORIZONTAL);
 		
-		Container c = new Container();
-		c.setFlex("1");
-		c.setPadding("5px 10px");
-		scene.add(c);
+		Canvas canvas = new Canvas();
+		canvas.setFlex("1");
 		
-		c.add(new UiBinderForm01());
-	}
-
-	@SuppressWarnings("unused")
-	private void flowPaneTest() {
-		Scene scene = new Scene();
-		scene.addStyleName("scene");
-
-		FlowPane flowPane = new FlowPane();
-		flowPane.setBorder("1px solid #ccc");
-		flowPane.setFlex("1");
-		scene.add(flowPane);
-
-		Button btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
-
-		btn = new Button("Hello, World!");
-		// btn.setFlex("1");
-		flowPane.add(btn);
+		scene.add(canvas);
 	}
 
 	@Override
