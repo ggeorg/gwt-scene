@@ -1,5 +1,9 @@
 define(['Core', 
-	'jquery', 
-	'jquery-resizable'], function(){
+	'bootstrap4',
+	'jquery-resizable',
+	'bootstrap-datepicker',
+	//'tempusdominus-bootstrap-4',
+	'bootstrap4-datetimepicker'
+], function(){
 	console.log("UI loaded!");
 });
