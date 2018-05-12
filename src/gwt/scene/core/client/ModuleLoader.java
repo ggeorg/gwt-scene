@@ -73,16 +73,31 @@ public final class ModuleLoader {
 					// Core Module
 					//
 					
-					'jquery': 'jquery/3.3.1/jquery',
-					'popper_js': 'popper.js/1.14.1/umd/popper.min',
-					'bootstrap4': 'bootstrap/4.0.0/js/bootstrap.min',
+					'jquery': 'jquery/3.3.1/jquery.min',
+					'moment': 'moment/2.22.0/js/moment-with-locales.min',
 					
 					//
 					// UI Module
 					//
 					
+					'popper_js': 'popper.js/1.14.1/umd/popper.min',
+					'bootstrap4': 'bootstrap/4.0.0/js/bootstrap.min',
 					'jquery-resizable': 'jquery-resizable/0.28/jquery-resizable',
+					'bootstrap-datepicker': 'bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min',
+					'tempusdominus-core': 'tempusdominus-core/5.0.0-alpha17/js/tempusdominus-core.min',
+					'tempusdominus-bootstrap-4': 'tempusdominus-bootstrap-4/5.0.0-alpha18/js/tempusdominus-bootstrap-4',
+					'bootstrap4-datetimepicker': 'bootstrap4-datetimepicker/4.17.50/js/bootstrap-datetimepicker',
+					
+					
 					'jquery-ui': 'jquery-ui/1.12.1/js/jquery-ui.min',
+					
+					//
+					// NVD3 Module
+					//
+					
+					
+					'd3': 'd3/3.5.17/d3.min',
+					'nvd3': 'nvd3/1.8.6/nv.d3',
 					
 					//
 					// SlickGrid

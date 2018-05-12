@@ -2,6 +2,9 @@ package gwt.scene.core.client.json;
 
 import com.google.gwt.core.client.JavaScriptObject;
 
+import gwt.scene.core.client.collections.JsArray;
+import gwt.scene.core.client.collections.JsObject;
+
 public final class JSON {
 
 	public static final native JavaScriptObject parse(String s) /*-{
@@ -32,15 +35,15 @@ public final class JSON {
 
 	// ---
 
-	public static native double asJsObject(JavaScriptObject obj) /*-{
+	public static native JsObject asJsObject(JavaScriptObject obj) /*-{
 		return $wnd.jQuery.isPlainObject(obj) ? obj : null;
 	}-*/;
 
-	public static native double asJsArray(JavaScriptObject obj) /*-{
+	public static native JsArray asJsArray(JavaScriptObject obj) /*-{
 		return $wnd.jQuery.isArray(obj) ? obj : null;
 	}-*/;
 
-	public static native double asString(JavaScriptObject obj) /*-{
+	public static native String asString(JavaScriptObject obj) /*-{
 		return (typeof obj === "string") ? obj : String(obj);
 	}-*/;
 

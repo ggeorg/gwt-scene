@@ -3,6 +3,4 @@
   "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
 <module>
 	<inherits name='com.google.gwt.user.User' />
-	<stylesheet src="bootstrap/4.0.0/css/bootstrap.min.css"/>
-	<stylesheet src="font-awesome/5.0.8/css/fontawesome.min.css"/>
 </module>

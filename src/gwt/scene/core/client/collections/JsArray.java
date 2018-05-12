@@ -1,6 +1,8 @@
 package gwt.scene.core.client.collections;
 
 import java.util.Comparator;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -94,6 +96,14 @@ public final class JsArray extends AbstractList<Object> {
 	public final native <T> void sort(Comparator<T> comparator) /*-{
 		this.sort(function(a, b) {
 			return comparator.@java.util.Comparator::compare(Ljava/lang/Object;Ljava/lang/Object;)(a, b);
+		});
+	}-*/;
+	
+	public final native JsArray map(Function<JsObject, Object> fcn) /*-{
+		return this.map(function(currentValue, index, array){
+			return fcn.@java.util.function.Function::apply(Ljava/lang/Object;)({
+				currentValue: currentValue, index: index, array: array
+			});
 		});
 	}-*/;
 }
