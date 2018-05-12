@@ -3,14 +3,41 @@ package gwt.scene.ui.client;
 import java.util.Objects;
 
 import gwt.scene.core.client.DOM;
+import gwt.scene.core.client.beans.property.AbstractProperty;
+import gwt.scene.core.client.beans.property.Property;
 
-// TODO aria-describedby, required
 public class TextBox extends com.google.gwt.user.client.ui.TextBox
 		implements FormControl, SceneNode {
 
 	public TextBox() {
 		super();
 		setStylePrimaryName("form-control");
+
+		addKeyUpHandler((e) -> {
+			if (valueProperty != null) {
+				valueProperty().invalidate();
+			}
+		});
+	}
+
+	private Property<String> valueProperty = null;
+
+	public Property<String> valueProperty() {
+		if (valueProperty == null) {
+			valueProperty = new AbstractProperty<String>() {
+
+				@Override
+				protected void set(String value) {
+					TextBox.this.setValue(value);
+				}
+
+				@Override
+				protected String get() {
+					return TextBox.this.getValue();
+				}
+			};
+		}
+		return valueProperty;
 	}
 
 	@Override
@@ -87,7 +114,7 @@ public class TextBox extends com.google.gwt.user.client.ui.TextBox
 			setStylePrimaryName("form-control");
 		}
 	}
-	
+
 	@Override
 	public boolean isRequired() {
 		return DOM.isRequired(this);

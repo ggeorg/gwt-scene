@@ -7,6 +7,9 @@ import gwt.scene.core.client.DOM;
 public class Widget extends com.google.gwt.user.client.ui.Widget
 		implements SceneNode/*, HasSelfAlign*/ {
 
+	protected Widget() {
+	}
+	
 	public Widget(Element element) {
 		setElement(element);
 	}
