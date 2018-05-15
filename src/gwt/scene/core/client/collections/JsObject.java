@@ -10,6 +10,8 @@ public class JsObject extends JavaScriptObject implements Map<String, Object> {
 
 	protected JsObject() {
 	}
+	
+	// ---------------------------------------------------------------------
 
 	@Override
 	public final Object get(String key) {
@@ -32,6 +34,59 @@ public class JsObject extends JavaScriptObject implements Map<String, Object> {
 	private final native Object _get(String key) /*-{
 		return this[key];
 	}-*/;
+	
+	// ---------------------------------------------------------------------
+
+	public final native boolean get(String key, boolean defaultValue) /*-{
+		if (key in this)
+			return this[key];
+		else
+			return defaultValue;
+	}-*/;
+
+	public final native char get(String key, char defaultValue) /*-{
+		if (key in this)
+			return this[key];
+		else
+			return defaultValue;
+	}-*/;
+
+	public final native byte get(String key, byte defaultValue) /*-{
+		if (key in this)
+			return this[key];
+		else
+			return defaultValue;
+	}-*/;
+
+	public final native JsObject get(String key, short defaultValue) /*-{
+		if (key in this)
+			return this[key];
+		else
+			return defaultValue;
+	}-*/;
+
+	public final native int get(String key, int defaultValue) /*-{
+		if (key in this)
+			return this[key];
+		else
+			return defaultValue;
+	}-*/;
+
+	public final native float get(String key, float defaultValue) /*-{
+		if (key in this)
+			return this[key];
+		else
+			return defaultValue;
+	}-*/;
+
+	public final native double get(String key, double defaultValue) /*-{
+		if (key in this)
+			return this[key];
+		else
+			return defaultValue;
+	}-*/;
+	
+	// ---------------------------------------------------------------------
 
 	@SuppressWarnings("unchecked")
 	@Override
@@ -39,6 +94,8 @@ public class JsObject extends JavaScriptObject implements Map<String, Object> {
 		this[key] = value;
 		return this;
 	}-*/;
+	
+	// ---------------------------------------------------------------------
 
 	public final native JsObject set(String key, boolean value) /*-{
 		this[key] = value;
@@ -74,6 +131,8 @@ public class JsObject extends JavaScriptObject implements Map<String, Object> {
 		this[key] = value;
 		return this;
 	}-*/;
+	
+	// ---------------------------------------------------------------------
 
 	@Override
 	public final native Object remove(String key) /*-{
@@ -89,6 +148,8 @@ public class JsObject extends JavaScriptObject implements Map<String, Object> {
 	public final native boolean has(String key) /*-{
 		return key in this;
 	}-*/;
+	
+	// ---------------------------------------------------------------------
 
 	public final native String toJSON() /*-{
 		return JSON.stringify(this);
