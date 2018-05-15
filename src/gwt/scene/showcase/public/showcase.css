@@ -31,3 +31,7 @@ button {
 	-border: 1em solid #888 !important;
 	-margin: 1em !important;
 }
+
+canvas {
+	border: .5em dashed #888;
+}

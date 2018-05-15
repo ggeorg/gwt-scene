@@ -21,6 +21,7 @@
   <inherits name="gwt.scene.ui.UI"/>
   <inherits name="gwt.scene.ui.slickgrid.SlickGrid"/>
   <inherits name="gwt.scene.ui.nvd3.NVD3"/>
+  <inherits name="gwt.scene.core.matrix.Matrix"/>
 
   <!-- Specify the app entry point class.                         -->
   <entry-point class='gwt.scene.showcase.client.Showcase'/>
