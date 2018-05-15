@@ -77,6 +77,12 @@ public final class ModuleLoader {
 					'moment': 'moment/2.22.0/js/moment-with-locales.min',
 					
 					//
+					// GL Matrix
+					//
+					
+					'gl-matrix': 'gl-matrix/2.4.0/gl-matrix-min',
+					
+					//
 					// UI Module
 					//
 					
@@ -87,7 +93,6 @@ public final class ModuleLoader {
 					'tempusdominus-core': 'tempusdominus-core/5.0.0-alpha17/js/tempusdominus-core.min',
 					'tempusdominus-bootstrap-4': 'tempusdominus-bootstrap-4/5.0.0-alpha18/js/tempusdominus-bootstrap-4',
 					'bootstrap4-datetimepicker': 'bootstrap4-datetimepicker/4.17.50/js/bootstrap-datetimepicker',
-					
 					
 					'jquery-ui': 'jquery-ui/1.12.1/js/jquery-ui.min',
 					
