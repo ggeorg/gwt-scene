@@ -28,6 +28,7 @@
     "bootstrap-datepicker": "^1.8.0",
     "eonasdan-bootstrap-datetimepicker": "^4.17.47",
     "tempusdominus-bootstrap-4": "^5.0.0-alpha8",
-    "nvd3": "^1.8.6"
+    "nvd3": "^1.8.6",
+    "gl-matrix": "^2.4.0"
   }
 }
