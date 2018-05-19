@@ -10,7 +10,7 @@ import com.google.gwt.dom.client.InputElement;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 
-public class Datepicker extends Widget {
+public class Datepicker extends _Widget {
 
 	private static DatepickerUiBinder uiBinder = GWT.create(DatepickerUiBinder.class);
 

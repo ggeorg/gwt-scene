@@ -6,9 +6,9 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.user.client.ui.RequiresResize;
 
 import gwt.scene.core.client.collections.JsArray;
-import gwt.scene.ui.client.Widget;
+import gwt.scene.ui.client._Widget;
 
-public abstract class AbstractChart extends Widget implements RequiresResize {
+public abstract class AbstractChart extends _Widget implements RequiresResize {
 
 	protected final Chart chart;
 	protected final JavaScriptObject gc;

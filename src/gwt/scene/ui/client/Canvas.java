@@ -6,7 +6,7 @@ import gwt.scene.core.client.collections.JsObject;
 import gwt.scene.ui.client.dom.Context2D;
 import gwt.scene.ui.client.dom.WebGLContext;
 
-public class Canvas extends Composite {
+public class Canvas extends _Composite {
 
 	public Canvas() {
 		initWidget(com.google.gwt.canvas.client.Canvas.createIfSupported());

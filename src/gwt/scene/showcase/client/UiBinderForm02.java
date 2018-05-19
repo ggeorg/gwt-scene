@@ -4,11 +4,11 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 
-import gwt.scene.ui.client.Composite;
+import gwt.scene.ui.client._Composite;
 import gwt.scene.ui.client.Form;
 import gwt.scene.ui.client.TextBox;
 
-public class UiBinderForm02 extends Composite {
+public class UiBinderForm02 extends _Composite {
 
 	private static MyUiBinder uiBinder = GWT.create(MyUiBinder.class);
 

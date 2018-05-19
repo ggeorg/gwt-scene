@@ -240,4 +240,21 @@ public class DOM {
 		formControl.asWidget()
 				.getElement().setPropertyBoolean("required", required);
 	}
+	
+	//
+	// CSS: pinter-events 
+	//
+
+	/**
+	 * The {@code pointer-events} CSS property
+	 * @param w
+	 * @param string
+	 */
+	public static void setPointerEvents(Widget w, String value) {
+		setPointerEvents(w.getElement(), value);
+	}
+
+	public static void setPointerEvents(Element element, String value) {
+		setCss(element, "pointerEvents", value);
+	}
 }

@@ -5,11 +5,11 @@ import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 
-import gwt.scene.ui.client.Composite;
+import gwt.scene.ui.client._Composite;
 import gwt.scene.ui.client.Container;
 import gwt.scene.ui.client.TextBox;
 
-public class UiBinderDemo extends Composite {
+public class UiBinderDemo extends _Composite {
 
 	interface MyUiBinder extends UiBinder<Container, UiBinderDemo> {
 		MyUiBinder uiBinder = GWT.create(MyUiBinder.class);

@@ -14,7 +14,7 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.HasValue;
 
-public class DatetimePicker extends Widget implements HasValue<Date> {
+public class DatetimePicker extends _Widget implements HasValue<Date> {
 
 	private static DatetimePickerUiBinder uiBinder = GWT.create(DatetimePickerUiBinder.class);
 

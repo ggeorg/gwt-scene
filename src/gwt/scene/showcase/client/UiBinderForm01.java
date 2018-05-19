@@ -8,11 +8,11 @@ import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 
-import gwt.scene.ui.client.Composite;
+import gwt.scene.ui.client._Composite;
 import gwt.scene.ui.client.DatetimePicker;
 import gwt.scene.ui.client.Form;
 
-public class UiBinderForm01 extends Composite {
+public class UiBinderForm01 extends _Composite {
 
 	interface MyUiBinder extends UiBinder<Form, UiBinderForm01> {
 		MyUiBinder uiBinder = GWT.create(MyUiBinder.class);

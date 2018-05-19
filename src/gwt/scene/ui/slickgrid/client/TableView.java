@@ -10,9 +10,9 @@ import com.google.gwt.user.client.ui.RequiresResize;
 
 import gwt.scene.core.client.collections.JsArray;
 import gwt.scene.core.client.collections.JsObject;
-import gwt.scene.ui.client.Widget;
+import gwt.scene.ui.client._Widget;
 
-public class TableView extends Widget implements RequiresResize {
+public class TableView extends _Widget implements RequiresResize {
 
 	private JavaScriptObject grid = null;
 
