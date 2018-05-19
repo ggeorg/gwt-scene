@@ -4,13 +4,13 @@ import com.google.gwt.dom.client.Element;
 
 import gwt.scene.core.client.DOM;
 
-public class Widget extends com.google.gwt.user.client.ui.Widget
+public class _Widget extends com.google.gwt.user.client.ui.Widget
 		implements SceneNode/*, HasSelfAlign*/ {
 
-	protected Widget() {
+	protected _Widget() {
 	}
 	
-	public Widget(Element element) {
+	public _Widget(Element element) {
 		setElement(element);
 	}
 

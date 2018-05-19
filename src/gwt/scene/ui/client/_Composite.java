@@ -2,7 +2,7 @@ package gwt.scene.ui.client;
 
 import gwt.scene.core.client.DOM;
 
-public abstract class Composite extends com.google.gwt.user.client.ui.Composite
+public abstract class _Composite extends com.google.gwt.user.client.ui.Composite
 		implements SceneNode/*, HasSelfAlign*/ {
 
 	//
